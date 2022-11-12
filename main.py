@@ -13,6 +13,7 @@ tip = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
 p_tip = (tip/100+1)
 each_person = int(input("How many people to split the bill? "))
 split = (bill / each_person) * p_tip
-r_split = round(split,2)
+#_split = round(split,2)
+r_split = "{:.2f}".format(split) # rounding to 2 decimal points 
 print(f"Each person should pay: $ {r_split}")
 
